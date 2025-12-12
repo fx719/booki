@@ -154,9 +154,13 @@ nav li a:hover {
     gap: 8px
 }
 
+
+/****** Hebergements, Populaires, Activités ***********/
+
 .section-title {
     margin: 0;
     font-size: 22px;
+
 }
 
 .card {
@@ -183,26 +187,89 @@ nav li a:hover {
 }
 
 /****** Hebergements And Populaires ***********/
+
+
+/* .hebergements-title {
+    margin-top: 15px;
+    margin-bottom: 30px;
+} */
+
+
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
+
+
+
 .hebergements {
-    width: 65%;
+    width: 70%;
+    padding: 30px;
+}
+
+.hebergements h2 {
+    margin-top: 0;
+    padding-bottom: 35px;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.hebergements-cards img {
+    height: 124px;
+    width: 250px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergements-cards .card-content {
+    padding: 0 0 5px 2px;
+    margin-left: 5px;
+}
+
+.hebergements-cards .card-content h3 {
+    margin-top: 5px;
+}
+
+.hebergements-cards .card-content p {
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+
+.display-more-content-button {
+    background: none;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.display-more-content-button:hover {
+    background-color: var(--filter-bg-color);
+    border-radius: 10px;
+    padding: 2px;
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    padding: 30px 30px 0 30px;
 }
 
 .populaires-title {
@@ -211,10 +278,20 @@ nav li a:hover {
     align-items: center;
 }
 
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 20px;
+}
+
+
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
 }
+
+
 
 .populaires-cards img {
     width: 33%;
@@ -248,6 +325,58 @@ nav li a:hover {
 
 /****** Activités ***********/
 
+.activites-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px 30px 0 0;
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+}
+
+.activites-cards img {
+    height: 380px;
+    width: 297.5px;
+    border-radius: 30px 30px 0 0;
+
+}
+
+.activites-cards .card-content {
+    padding-left: 10px;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    margin-bottom: 0;
+}
+
+
+
+.footer-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 30px 30px 0 30px;
+    align-items: center;
+    gap: 200px;
+}
+
+.footer-categories ul {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    gap: 10px
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
