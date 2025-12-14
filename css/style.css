@@ -88,35 +88,45 @@ nav li a:hover {
     border-radius: 60px;
 }
 
+.search-inputs {
+    display: flex;
+    border: 1px solid var(--button-border-color);
+    width: 24%;
+    border-radius: 10px;
+
+}
+
+
 .fa-solid.fa-location-dot {
+    display: flex;
+    justify-content: center;
     color: black;
-    background-color: rgb(192, 189, 189);
+    background-color: var(--button-border-color);
     padding: 12px 10px 10px 10px;
     border-radius: 8px 0 0 8px;
+    width: 5%;
 }
 
-.search-inputs {
-    border: 1px solid var(--button-border-color);
-    max-width: fit-content;
-    max-height: fit-content;
-    border-radius: 10px;
-    display: flex;
-}
+
 
 #hebergements-search-bar {
+    display: flex;
     border: 0;
     font-weight: bold;
     text-align: center;
     font-size: 18px;
-    padding: 0%;
+    padding: 0;
+    width: 57%;
 }
 
 .search-inputs input[type="submit"] {
+    display: flex;
+    width: 35%;
     border: 0;
     background: none;
     background-color: #0065FC;
     color: white;
-    padding: 10px;
+    padding: 10px 5px 10px 5px;
     border-radius: 0 8px 8px 0;
     font-weight: bolder;
     font-size: 18px;
@@ -188,14 +198,6 @@ nav li a:hover {
 
 /****** Hebergements And Populaires ***********/
 
-
-/* .hebergements-title {
-    margin-top: 15px;
-    margin-bottom: 30px;
-} */
-
-
-
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -209,7 +211,6 @@ nav li a:hover {
 }
 
 /****** Hebergements ***********/
-
 
 
 .hebergements {
@@ -251,19 +252,9 @@ nav li a:hover {
 }
 
 
-.display-more-content-button {
-    background: none;
-    border: 0;
+.display-more-content {
     margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: larger;
-}
-
-.display-more-content-button:hover {
-    background-color: var(--filter-bg-color);
-    border-radius: 10px;
-    padding: 2px;
+    font-weight: bold;
 }
 
 /****** Populaires ***********/
@@ -281,7 +272,8 @@ nav li a:hover {
 .populaires-cards {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
     gap: 20px;
 }
 
@@ -335,7 +327,7 @@ nav li a:hover {
 .activites-cards .card {
     display: flex;
     flex-direction: column;
-    border-radius: 30px 30px 0 0;
+    border-radius: 30px 30px 20px 20px;
     height: fit-content;
     width: fit-content;
     padding: 0;
@@ -349,8 +341,11 @@ nav li a:hover {
 }
 
 .activites-cards .card-content {
-    padding-left: 10px;
+    padding-left: 20px;
 }
+
+
+/****** Footer ***********/
 
 footer {
     background-color: var(--main-bg-color);
@@ -365,7 +360,7 @@ footer {
     justify-content: flex-start;
     margin: 30px 30px 0 30px;
     align-items: center;
-    gap: 200px;
+    gap: 250px;
 }
 
 .footer-categories ul {
