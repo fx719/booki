@@ -153,7 +153,7 @@ nav li a:hover {
     border: 1px solid var(--button-border-color);
     background: none;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.070rem;
     border-radius: 40px;
     padding: 10px;
 }
@@ -554,19 +554,13 @@ footer {
 @media (max-width: 767.98px) {
 
     .main-container {
-        max-width: none;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
         margin-inline: 0;
         padding: 0;
-    }
-
-    /* main container desktop version
-    .main-container {
         width: 100%;
-        max-width: 1440px;
-        margin-inline: auto;
-        padding: 0 50px;
-        box-sizing: border-box;
-    } */
+    }
 
     /****** Nav ***********/
 
@@ -574,7 +568,7 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 0;
 
     }
 
@@ -600,6 +594,7 @@ footer {
         font-size: 1.2rem;
         gap: 0px;
         padding-bottom: 1em;
+        margin-bottom: 0;
     }
 
     nav li {
@@ -631,21 +626,91 @@ footer {
 
     /****** Header ***********/
 
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+
+
+    .header-title {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .header-title h1 {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        font-size: 2.4rem;
+        margin-bottom: 0.3rem;
+        text-wrap: balance;
+        text-align: start;
+    }
+
+    .header-title p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.7rem;
+        width: 90%;
+        margin-bottom: 0.5rem;
+        text-align: start;
+
+    }
+
+
+    .search-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .search-inputs {
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .fa-solid.fa-location-dot {
+        width: 10%;
+        padding: 15px 0 12px 0;
+        font-size: 1.3rem;
+    }
+
+
+    #hebergements-search-bar {
+        width: 80%;
+        font-size: 1.8rem;
+        text-align: start;
+        text-indent: 2em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
     .alternative-search-button {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 35%;
+        width: 10%;
         border: 0;
         background: none;
         background-color: #0065FC;
         color: white;
-        border-radius: 0 8px 8px 0;
+        border-radius: 8px 8px 8px 8px;
         font-weight: bolder;
         font-size: 18px;
+        box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.568);
     }
+
+
 
     .search-button {
         display: none;
@@ -654,4 +719,40 @@ footer {
     .fa-solid.fa-magnifying-glass {
         color: white;
     }
+
+
+    .search-form-filters-title {
+        font-size: 1.3em;
+    }
+
+    .search-form-filters button {
+        width: 45%;
+        padding: 20px 0px 20px 0px;
+        text-align: start;
+        word-spacing: 0.1em;
+        font-size: 1.5rem;
+        text-indent: 0.6em;
+    }
+
+    .search-form-filters-buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 1em
+    }
+
+
+
+    .hebergements-disponibles-info {
+        justify-content: flex-start;
+        width: 80%;
+    }
+
+    .hebergements-disponibles-info p {
+        font-size: 1.7rem;
+        word-spacing: 0.1rem;
+    }
+
+
+
 }
