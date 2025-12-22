@@ -907,6 +907,31 @@ footer {
         object-fit: cover;
     }
 
+    /***** Footer *****/
+
+
+    .footer-categories {
+        flex-flow: column wrap;
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 2em;
+        text-wrap: nowrap;
+
+    }
+
+    .footer-categories .div-list {
+        display: flex;
+        flex-flow: column wrap;
+        width: 30%;
+    }
+
+    .div-list h3 {
+        margin-bottom: 0;
+    }
+
 
 }
 
