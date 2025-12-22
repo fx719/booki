@@ -729,14 +729,7 @@ footer {
         font-size: 1.3em;
     }
 
-    .search-form-filters button {
-        width: 48%;
-        padding: 20px 0px 20px 0px;
-        text-align: start;
-        word-spacing: 0.1em;
-        font-size: 1.5rem;
-        text-indent: 0.6em;
-    }
+
 
     .search-form-filters-buttons {
         display: flex;
@@ -744,6 +737,16 @@ footer {
         justify-content: center;
         gap: 1em;
         width: 90%;
+    }
+
+    .search-form-filters button {
+        width: 48%;
+        padding: 20px 0px 20px 0px;
+        text-align: start;
+        word-spacing: 0.1em;
+        font-size: 1.5rem;
+        text-indent: 0.6em;
+        text-wrap: nowrap;
     }
 
 
@@ -935,9 +938,150 @@ footer {
 
 }
 
-@media (max-width: 490px) {
+
+
+@media(max-width : 728px) {
+    .header-title h1 {
+        font-size: 2rem;
+    }
+
+    .header-title p {
+        font-size: 1.4rem;
+    }
+
+
+}
+
+
+
+@media (max-width: 703px) {
+    .hebergements-disponibles-info p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width : 630px) {
+    .hebergements-disponibles-info p {
+        font-size: 1.4rem;
+    }
+
+    .search-form-filters button {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media(max-width : 610px) {
+    .header-title h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-title p {
+        font-size: 1rem;
+    }
+
+    .hebergements-disponibles-info p {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:573px) {
+
+    .search-form-filters {
+        margin-top: 0;
+    }
+
+    .search-form-filters button {
+        width: 45%;
+        font-size: 1.1rem;
+    }
+
+    .search-form-filters-title {
+        font-size: 1.1em;
+    }
+
+}
+
+@media(max-width:573px) {
+    .search-form-filters button {
+        font-size: 1rem;
+        padding: 10px 0 10px 0;
+    }
+
+}
+
+
+@media(max-width : 555px) {
+    .hebergements-disponibles-info p {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width : 519px) {
+    .hebergements-disponibles-info p {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 492px) {
+
+    .header-title {
+        width: 90%;
+    }
+
+
+    .header-title h1 {
+        font-size: 1.4rem;
+    }
+
+    .header-title p {
+        font-size: 0.8rem;
+    }
+
 
     .activites-cards .card-content {
         font-size: 1.1rem;
+    }
+
+
+    .hebergements-disponibles-info p {
+        font-size: 1rem;
+    }
+
+    .search-form-filters button {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+@media (max-width: 445px) {
+    .hebergements-disponibles-info p {
+        font-size: 0.9rem;
+    }
+
+    .fa-solid.fa-info {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 422px) {
+
+    .search-form-filters-title {
+        font-size: 1rem;
+    }
+
+
+    .search-form-filters button {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 408px) {
+    .hebergements-disponibles-info p {
+        font-size: 0.8rem;
     }
 }
