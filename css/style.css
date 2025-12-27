@@ -60,9 +60,9 @@ nav ul {
 
 
 nav li a:hover {
-    border-color: #0065FC;
+    border-color: var(--main-color);
     border-top-style: solid;
-    color: #0065FC;
+    color: var(--main-color);
     padding-top: 8px;
 
 }
@@ -117,13 +117,10 @@ nav li a:hover {
 }
 
 .search-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 35%;
     border: 0;
     background: none;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: white;
     border-radius: 0 8px 8px 0;
     font-weight: 900;
@@ -153,7 +150,7 @@ nav li a:hover {
 }
 
 .search-form-filters button:hover {
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
 }
 
 
@@ -164,7 +161,7 @@ nav li a:hover {
 }
 
 .fa-solid.fa-info {
-    color: #0065FC;
+    color: var(--main-color);
     border: 1px solid var(--button-border-color);
     padding: 1em 0.8em 1em 0.8em;
     border-radius: 60px;
@@ -615,10 +612,10 @@ footer {
 
 
     nav li a:hover {
-        border-color: #0065FC;
+        border-color: var(--main-color);
         border-top-style: none;
         border-bottom-style: solid;
-        color: #0065FC;
+        color: var(--main-color);
         padding-top: 0;
 
     }
@@ -703,7 +700,7 @@ footer {
         width: 10%;
         border: 0;
         background: none;
-        background-color: #0065FC;
+        background-color: var(--main-color);
         color: white;
         border-radius: 8px;
         font-weight: bolder;
