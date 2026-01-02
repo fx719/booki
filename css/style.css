@@ -96,14 +96,17 @@ nav li a:hover {
 }
 
 
+
+
 .fa-solid.fa-location-dot {
     display: flex;
     justify-content: center;
     color: black;
     background-color: var(--button-border-color);
-    padding: 12px 10px 10px 10px;
+    padding: 1em;
     border-radius: 8px 0 0 8px;
     width: 5%;
+    font-size: 1.1rem;
 }
 
 
@@ -142,13 +145,24 @@ nav li a:hover {
     align-items: center;
 }
 
+.search-form-filters-title {
+    font-size: 1.2rem;
+}
+
+
+.search-form-filters-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+
 .search-form-filters button {
     border: 1px solid var(--button-border-color);
     background: none;
     font-weight: bold;
     font-size: 1.070rem;
     border-radius: 40px;
-    padding: 10px;
+    padding: 1em;
 }
 
 .search-form-filters button:hover {
@@ -698,7 +712,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
         width: 10%;
         border: 0;
         background: none;
@@ -706,8 +719,9 @@ footer {
         color: white;
         border-radius: 8px;
         font-weight: bolder;
-        font-size: 18px;
-
+        font-size: 1.3rem;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .alternative-search-button:hover {
@@ -724,13 +738,12 @@ footer {
 
 
     .search-form-filters-title {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 
 
 
     .search-form-filters-buttons {
-        display: flex;
         flex-flow: row wrap;
         justify-content: center;
         gap: 1em;
@@ -739,11 +752,8 @@ footer {
 
     .search-form-filters button {
         width: 48%;
-        padding: 20px 0px 20px 0px;
         text-align: start;
-        word-spacing: 0.1em;
         font-size: 1.5rem;
-        text-indent: 0.6em;
         text-wrap: nowrap;
     }
 
@@ -994,7 +1004,7 @@ footer {
     }
 
     .search-form-filters-title {
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
 
 }
@@ -1002,7 +1012,6 @@ footer {
 @media(max-width:573px) {
     .search-form-filters button {
         font-size: 1rem;
-        padding: 10px 0 10px 0;
     }
 
 }
@@ -1020,7 +1029,19 @@ footer {
     }
 }
 
-@media(max-width : 519px) {
+@media(max-width : 520px) {
+
+
+    .fa-solid.fa-location-dot {
+        font-size: 1.2rem;
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+    }
+
+    .alternative-search-button {
+        font-size: 1.2rem;
+    }
+
     .hebergements-disponibles-info p {
         font-size: 1.1rem;
     }
@@ -1040,6 +1061,11 @@ footer {
 
     .header-title p {
         font-size: 0.8rem;
+    }
+
+
+    #hebergements-search-bar {
+        font-size: 1.3rem;
     }
 
     .hebergements-disponibles-info p {
@@ -1093,10 +1119,35 @@ footer {
 
 
     #hebergements-search-bar {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .search-form-filters button {
+        font-size: 0.7rem;
     }
 
     .hebergements-disponibles-info p {
         font-size: 0.8rem;
     }
+
+    .hebergements-cards .card-content {
+        font-size: 1.1rem;
+    }
+
+    .activites-cards .card-content {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:350px) {
+
+    .hebergements-cards .card-content {
+        font-size: 1rem;
+    }
+
+    .activites-cards .card-content {
+        font-size: 0.9rem;
+    }
+
 }
