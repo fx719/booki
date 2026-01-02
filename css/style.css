@@ -1050,11 +1050,6 @@ footer {
 
 @media (max-width: 492px) {
 
-    .header-title {
-        width: 90%;
-    }
-
-
     .header-title h1 {
         font-size: 1.4rem;
     }
@@ -1089,6 +1084,11 @@ footer {
 @media (max-width: 445px) {
 
 
+    .header-title h1 {
+        font-size: 1.3rem;
+    }
+
+
     #hebergements-search-bar {
         font-size: 1.3rem;
     }
@@ -1118,6 +1118,10 @@ footer {
 @media (max-width: 408px) {
 
 
+    .header-title h1 {
+        font-size: 1.2rem;
+    }
+
     #hebergements-search-bar {
         font-size: 1rem;
     }
@@ -1140,7 +1144,26 @@ footer {
 
 }
 
+
+@media (max-width:374px) {
+    .header-title h1 {
+        font-size: 1.1rem;
+    }
+
+    .hebergements-disponibles-info p {
+        font-size: 0.7rem;
+    }
+}
+
 @media (max-width:350px) {
+
+    .header-title h1 {
+        font-size: 1rem;
+    }
+
+    .header-title p {
+        font-size: 0.7rem;
+    }
 
     .hebergements-cards .card-content {
         font-size: 1rem;
