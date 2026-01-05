@@ -152,7 +152,7 @@ nav li a:hover {
 
 .search-form-filters-buttons {
     display: flex;
-    gap: 1em;
+    gap: 0.8em;
 }
 
 
@@ -160,9 +160,10 @@ nav li a:hover {
     border: 1px solid var(--button-border-color);
     background: none;
     font-weight: bold;
-    font-size: 1.070rem;
+    font-size: 1.2rem;
     border-radius: 40px;
     padding: 1em;
+    text-wrap: nowrap;
 }
 
 .search-form-filters button:hover {
@@ -743,6 +744,11 @@ footer {
 
 
 
+    .search-form-filters {
+        width: 80%;
+    }
+
+
     .search-form-filters-buttons {
         flex-flow: row wrap;
         justify-content: center;
@@ -753,7 +759,6 @@ footer {
     .search-form-filters button {
         width: 48%;
         text-align: start;
-        font-size: 1.5rem;
         text-wrap: nowrap;
     }
 
@@ -971,9 +976,7 @@ footer {
         font-size: 1.4rem;
     }
 
-    .search-form-filters button {
-        font-size: 1.3rem;
-    }
+
 
 }
 
@@ -999,22 +1002,20 @@ footer {
     }
 
     .search-form-filters button {
-        width: 45%;
-        font-size: 1.1rem;
+        width: 48%;
     }
 
     .search-form-filters-title {
         font-size: 1.1rem;
     }
 
-}
-
-@media(max-width:573px) {
-    .search-form-filters button {
-        font-size: 1rem;
+    .search-form-filters-buttons {
+        width: 100%;
+        gap: 0.8em
     }
 
 }
+
 
 
 @media(max-width : 555px) {
@@ -1027,6 +1028,10 @@ footer {
     .hebergements-disponibles-info p {
         font-size: 1.2rem;
     }
+
+
+
+
 }
 
 @media(max-width : 520px) {
@@ -1067,9 +1072,7 @@ footer {
         font-size: 1rem;
     }
 
-    .search-form-filters button {
-        font-size: 0.9rem;
-    }
+
 
     .activites-cards .card-content {
         font-size: 1.1rem;
@@ -1078,6 +1081,13 @@ footer {
 
 
 
+}
+
+
+@media (max-width:466px) {
+    .search-form-filters {
+        width: 90%;
+    }
 }
 
 
@@ -1109,9 +1119,7 @@ footer {
     }
 
 
-    .search-form-filters button {
-        font-size: 0.8rem;
-    }
+
 
 }
 
@@ -1126,8 +1134,13 @@ footer {
         font-size: 1rem;
     }
 
-    .search-form-filters button {
-        font-size: 0.7rem;
+
+    .search-form {
+        width: 90%;
+    }
+
+    .search-form-filters {
+        width: 95%;
     }
 
     .hebergements-disponibles-info p {
@@ -1145,6 +1158,17 @@ footer {
 }
 
 
+@media (max-width: 387px) {
+    .search-form {
+        width: 95%;
+    }
+
+    .search-form-filters {
+        width: 100%;
+    }
+}
+
+
 @media (max-width:374px) {
     .header-title h1 {
         font-size: 1.1rem;
@@ -1153,6 +1177,16 @@ footer {
     .hebergements-disponibles-info p {
         font-size: 0.7rem;
     }
+}
+
+@media(max-width:366px) {
+
+    .search-form-filters button {
+        font-size: 1rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
 }
 
 @media (max-width:350px) {
@@ -1172,5 +1206,20 @@ footer {
     .activites-cards .card-content {
         font-size: 0.9rem;
     }
+
+}
+
+
+@media(max-width:340px) {
+    .search-form-filters button {
+        width: 42%;
+        font-size: 0.9rem;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+
+    .search-form-filters-buttons {}
+
 
 }
