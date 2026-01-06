@@ -574,7 +574,7 @@ footer {
         max-width: 100%;
         margin-inline: 0;
         padding: 0;
-        width: 100%;
+        min-width: 290px;
     }
 
     /****** Nav ***********/
@@ -655,14 +655,14 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 80%;
+        max-width: 80%;
         justify-content: flex-start;
     }
 
     .header-title h1 {
         margin: 0;
         padding: 0;
-        width: 90%;
+        max-width: 90%;
         font-size: 2.4rem;
         margin-bottom: 0.3rem;
         text-wrap: balance;
@@ -684,11 +684,11 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80%;
+        max-width: 80%;
     }
 
     .search-inputs {
-        width: 90%;
+        max-width: 90%;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -791,6 +791,7 @@ footer {
     /***** Hébergements *****/
     .hebergements {
         order: 2;
+        max-width: 100%;
     }
 
     .hebergements h2 {
@@ -835,6 +836,7 @@ footer {
     /***** Populaires *****/
     .populaires {
         order: 1;
+        max-width: 100%;
     }
 
     .populaires-title {
@@ -889,6 +891,7 @@ footer {
 
     .activites {
         padding: 30px;
+        max-width: 100%;
     }
 
     .activites h2 {
@@ -931,7 +934,7 @@ footer {
         margin-right: 0;
         justify-content: flex-start;
         align-items: flex-start;
-        padding-left: 2em;
+        padding-left: 1em;
         text-wrap: nowrap;
 
     }
@@ -1216,5 +1219,11 @@ footer {
         font-size: 0.9rem;
         padding-top: 21px;
         padding-bottom: 21px;
+    }
+
+
+
+    .activites-cards .card-content {
+        font-size: 0.8rem;
     }
 }
